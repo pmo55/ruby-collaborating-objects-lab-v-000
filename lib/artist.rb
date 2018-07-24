@@ -26,7 +26,7 @@ class Artist
 
 
   def self.create(name)
-    self.new(name).tap {|artist| artist.save} unless artist.name == name
+    self.new(name).tap {|artist| artist.save} 
   end
 def save
     @@all << self
