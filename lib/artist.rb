@@ -13,7 +13,7 @@ class Artist
 
   def add_song(song)
     @songs << song
-    Song.artist=self unless Song.artist==self 
+    song.artist=self unless song.artist==self 
   end
 
   def self.find_or_create_by_name(name)
